@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="doc.css">
+    <style>
+        .Aside{
+            width: 30%;
+            height: 100vh;
+            background-color: rgb(54, 174, 174);
+        }
+        .Bside{
+             width: 70%;
+            height: 100vh;
+            background-color: rgb(107, 22, 186);
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+        }
+        @media only screen and (max-width: 600px){
+           .main{
+            flex-direction: column;
+           }
+            .Aside,.Bside{
+             width: 100%;
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+    <div class="Aside">
+        <div id="image"></div>
+    </div>
+    <div class="Bside"></div>
+</div>
+</body>
+</html>
